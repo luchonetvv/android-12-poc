@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Proof of Concept Android 12</string>
+    <string name="default_notification_channel_id">ChannelTest</string>
+    <string name="fcm_message">Aviso</string>
+</resources>
