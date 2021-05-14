@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProofOfConceptAndroid12">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +21,15 @@
         </activity>
 
         <service
-            android:name="dev.luchonetvv.android12poc.firebase.MyFirebaseMessagingService">
+            android:name="dev.luchonetvv.android12poc.firebase.MyFirebaseMessagingService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <receiver android:name="dev.luchonetvv.android12poc.broadcastreceiver.MyBroadcastReceiver">
+        <receiver android:name="dev.luchonetvv.android12poc.broadcastreceiver.MyBroadcastReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
