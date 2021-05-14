@@ -22,14 +22,14 @@
 
         <service
             android:name="dev.luchonetvv.android12poc.firebase.MyFirebaseMessagingService"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <receiver android:name="dev.luchonetvv.android12poc.broadcastreceiver.MyBroadcastReceiver"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
